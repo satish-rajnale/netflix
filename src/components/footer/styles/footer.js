@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 export const Row = styled.div`
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 15px;
 
     @media (max-width: 1000px){
@@ -27,22 +27,23 @@ export const Column = styled.div`
     text-align:left;
 `;
 export const Title = styled.p`
-    font-size:16px;
+    font-size:20px;
+    font-weight:500;
     color:#757575;
     margin-bottom:40px;
 `;
 export const Link = styled.a`
     color:#757575;
     margin-bottom:20px;
-    font-size:13px;
+    font-size:16px;
     text-decoration:none;
 `;
 export const Text = styled.div`
-    font-size:13px;
+    font-size:16px;
     color:#757575;
     margin-bottom:40px;
 `;
 export const Break = styled.div`
     flex-basis:100%;
-    height:0;
+    margin-top:30px;
 `;
