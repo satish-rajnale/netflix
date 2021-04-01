@@ -1,12 +1,9 @@
 
-
-
-function Browse() {
-    return (
-        <div>
-            Welcome to browse
-        </div>
-    )
+import { useContent} from '../hooks'
+export default function Browse() {
+   
+    const { series} = useContent('series');
+    const { films} = useContent('films');
 }
 
-export default Browse
+

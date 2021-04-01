@@ -2,7 +2,7 @@ import { Header } from "../components";
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
-export default function HeaderContainer({children}){
+export  function HeaderContainer({children}){
     return(
         <Header>
             <Header.Frame>
