@@ -7,6 +7,7 @@ export const Container = styled.div`
   margin-top: 20px;
   flex-wrap: wrap;
 
+  
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;

@@ -30,6 +30,19 @@ export default function App() {
          <ProtectedRoute user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
            <Home/>
         </ProtectedRoute>
+
+{/* <Route path={ROUTES.HOME} exact>
+       <Home/>
+     </Route>
+     <Route path={ROUTES.SIGN_IN} >
+        <SignIn/>
+     </Route>
+     <Route path={ROUTES.BROWSE} >
+        <Browse/>
+     </Route>
+     <Route path={ROUTES.SIGN_UP} >
+        <SignUp/>
+     </Route> */}
       </Switch>
    </Router> 
   );
