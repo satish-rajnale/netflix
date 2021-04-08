@@ -19,5 +19,6 @@ Also, sign up validation, i.e until all the fields are filled the sign up/in but
 ##Main Page
 ![1](https://user-images.githubusercontent.com/76589507/113991107-c5aa5b80-986f-11eb-828c-dea55e7bec59.PNG)
 ## Responsive -
-![responsive1](https://user-images.githubusercontent.com/76589507/113991168-d2c74a80-986f-11eb-97d8-5ba3f681a786.PNG)
+![responsive1](https://user-images.githubusercontent.com/76589507/113991450-15892280-9870-11eb-9f23-e910f83d126e.PNG)
+
 
