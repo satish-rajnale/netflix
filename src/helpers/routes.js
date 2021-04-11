@@ -5,10 +5,13 @@ export function IsUserRedirect({ user, loggedInPath, children, ...rest}){
         <Route
             {...rest}
             render={() => {
-                if(!user){
+                if(user.user == null){
+                    console.log("child")
                     return children;
                 }
-                if(user){
+                else if(user){
+                    console.log("user", user)
+
                     return (
                         <Redirect
                             to={{

@@ -11,7 +11,7 @@ import Fuse from 'fuse.js';
 
 export function BrowseContainer({ slides }) {
     const { firebase } = useContext(FirebaseContext);
-    const user = firebase.auth().currentUser || {};
+    const [user, setUser] = useState([]);
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
@@ -28,8 +28,12 @@ export function BrowseContainer({ slides }) {
 
     useEffect(() => {
         setSlideRows(slides[category]);
-      
-    }, [slides, category]);
+      if(firebase.auth().currentUser){
+        setUser(firebase.auth().currentUser)
+      }else{
+        setUser([]);
+      }
+    }, [slides, category, firebase]);
 
     useEffect(() => {
         const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
