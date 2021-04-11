@@ -8,6 +8,10 @@ In this project I have used styled-components, react, react-router-dom, firebase
 ### Sign In page:
 ![signin](https://user-images.githubusercontent.com/76589507/113990097-c0004600-986e-11eb-984f-5033247d8a42.PNG)
 
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 ### Sign Up page:
 ![signup](https://user-images.githubusercontent.com/76589507/113990160-cee6f880-986e-11eb-8426-207f4dfc99c7.PNG)
 Also, sign up validation, i.e until all the fields are filled the sign up/in button will be disabled.
