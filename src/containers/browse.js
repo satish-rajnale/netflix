@@ -46,6 +46,10 @@ export function BrowseContainer({ slides }) {
         }
       }, [searchTerm]);
 
+      function signmeOut(){
+        firebase.auth().signOut();
+        
+      }
       
     return profile.displayName ?
         (<>
@@ -76,7 +80,7 @@ export function BrowseContainer({ slides }) {
                                     <Header.TextLink>{user.displayName}</Header.TextLink>
                                 </Header.Group>
                                 <Header.Group>
-                                    <Header.TextLink onClick={() => firebase.auth().signOut()} >Sign Out</Header.TextLink>
+                                    <Header.TextLink onClick={() => signmeOut()} >Sign Out</Header.TextLink>
                                 </Header.Group>
                             </Header.Dropdown>
                         </Header.Profile>

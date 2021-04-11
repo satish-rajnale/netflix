@@ -31,10 +31,8 @@ export function ProtectedRoute({ user, children, ...rest}){
         <Route
             {...rest}
             render={({location}) => {
-                if(user){
-                    return children;
-                }
-                if(!user){
+               
+                 if(user.user == null){
                     return (
                         <Redirect
                             to={{
@@ -43,6 +41,9 @@ export function ProtectedRoute({ user, children, ...rest}){
                             }}
                         />
                       )
+                }
+               else if(user){
+                    return children;
                 }
                 return null;
             }}
