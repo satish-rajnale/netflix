@@ -27,9 +27,9 @@ export default function App() {
           <Browse/>
        </ProtectedRoute>
     
-         <ProtectedRoute user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
+         <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
            <Home/>
-        </ProtectedRoute>
+        </IsUserRedirect>
 
 {/* <Route path={ROUTES.HOME} exact>
        <Home/>
