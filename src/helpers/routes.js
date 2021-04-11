@@ -6,11 +6,11 @@ export function IsUserRedirect({ user, loggedInPath, children, ...rest}){
             {...rest}
             render={() => {
                 if(user.user == null){
-                    console.log("child")
+                   
                     return children;
                 }
                 else if(user){
-                    console.log("user", user)
+                    
 
                     return (
                         <Redirect
