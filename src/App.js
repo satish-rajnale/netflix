@@ -11,7 +11,7 @@ export default function App() {
   return (
    <Router>
      <Switch>
-        {/* <IsUserRedirect
+        <IsUserRedirect
           user={user}
           loggedInPath={ROUTES.BROWSE}
           path={ROUTES.SIGN_IN}>
@@ -29,9 +29,9 @@ export default function App() {
     
          <ProtectedRoute user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
            <Home/>
-        </ProtectedRoute> */}
+        </ProtectedRoute>
 
-<Route path={ROUTES.HOME} exact>
+{/* <Route path={ROUTES.HOME} exact>
        <Home/>
      </Route>
      <Route path={ROUTES.SIGN_IN} >
@@ -42,7 +42,7 @@ export default function App() {
      </Route>
      <Route path={ROUTES.SIGN_UP} >
         <SignUp/>
-     </Route>
+     </Route> */}
       </Switch>
    </Router> 
   );
