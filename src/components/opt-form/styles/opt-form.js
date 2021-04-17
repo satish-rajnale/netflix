@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,6 @@ export const Container = styled.div`
   margin-top: 20px;
   flex-wrap: wrap;
 
-  
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
