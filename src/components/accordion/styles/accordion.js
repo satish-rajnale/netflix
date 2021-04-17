@@ -1,11 +1,9 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
   border-bottom: 8px solid #222;
 `;
-
-
 
 export const Inner = styled.div`
   display: flex;
@@ -30,12 +28,12 @@ export const Title = styled.h1`
 
 export const Item = styled.div`
   color: white;
-  
+
   margin-bottom: 10px;
- margin:auto;
+  margin: auto;
 
   max-width: 720px;
- width:100%;
+  width: 100%;
 
   &:first-of-type {
     margin-top: 3em;
@@ -60,7 +58,7 @@ export const Header = styled.div`
   img {
     filter: brightness(0) invert(1);
     width: 18px;
-    
+
     user-select: none;
 
     @media (max-width: 600px) {
@@ -81,13 +79,12 @@ export const Body = styled.div`
   padding: 0.8em 2.2em 0.8em 1.2em;
   white-space: pre-wrap;
   user-select: none;
-  max-height:1200px;
+  max-height: 1200px;
   transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-
 
   &.closed {
     max-height: 0;
-    
+
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
   }
   &.open {
