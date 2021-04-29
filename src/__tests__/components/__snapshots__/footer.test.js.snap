@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer/> renders the <Footer/> with data 1`] = `
+<div
+  class="footer__Container-qu6i6-0 kMAYhg"
+>
+  <p
+    class="footer__Title-qu6i6-3 bKhpHO"
+  >
+    Questions? Call 000-800-040-1843
+  </p>
+  <div
+    class="footer__Break-qu6i6-6 UrvGN"
+  />
+  <div
+    class="footer__Row-qu6i6-1 dWrLbY"
+  >
+    <div
+      class="footer__Column-qu6i6-2 jtLmfk"
+    >
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        FAQ
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Investor Relations
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Ways To Watch
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Media Center
+      </a>
+    </div>
+    <div
+      class="footer__Column-qu6i6-2 jtLmfk"
+    >
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Help Centre
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Investor Relations
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Terms Of Use
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Corporate Information
+      </a>
+    </div>
+    <div
+      class="footer__Column-qu6i6-2 jtLmfk"
+    >
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Account
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Jobs
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Privacy
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+    <div
+      class="footer__Column-qu6i6-2 jtLmfk"
+    >
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Cookie Preferences
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Netflix Originals
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Legal Notices
+      </a>
+      <a
+        class="footer__Link-qu6i6-4 ipqJdV"
+        href="#"
+      >
+        Ways To Watch
+      </a>
+    </div>
+  </div>
+  <div
+    class="footer__Break-qu6i6-6 UrvGN"
+  />
+  <div
+    class="footer__Text-qu6i6-5 fDDZSy"
+  >
+    Netflix India
+  </div>
+</div>
+`;
