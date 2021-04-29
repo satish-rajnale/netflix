@@ -7,6 +7,7 @@ import {
   Pane,
   SubTitle,
 } from "./styles/jumbotron";
+import React from 'react';
 
 export default function Jumbotron({
   children,

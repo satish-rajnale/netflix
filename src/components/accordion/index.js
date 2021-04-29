@@ -7,6 +7,7 @@ import {
   Header,
   Body,
 } from "./styles/accordion.js";
+import React from 'react';
 
 const ToggleContext = createContext();
 

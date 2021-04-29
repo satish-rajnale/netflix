@@ -16,6 +16,7 @@ import {
   Item,
   Image,
 } from "./styles/card";
+import React from 'react';
 
 export const FeatureContext = createContext();
 
