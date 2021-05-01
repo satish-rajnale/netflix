@@ -113,14 +113,14 @@ describe("<Card/>", ()=>{
              expect(queryByText("18")).toBeTruthy();
             
              fireEvent.click(getByAltText("close"));
-             expect(queryByText("18")).toBeFalsy();
+             expect(queryByText("PG")).toBeFalsy();
              
              expect(queryByText("PG")).toBeFalsy();
-             fireEvent.click(getByTestId("tiger-king-item-feature"));
-             expect(queryByText("PG")).toBeFalsy();
+             fireEvent.click(getByTestId("juno-item-feature"));
+             expect(queryByText("PG")).toBeTruthy();
 
-            //  fireEvent.click(getByAltText("close"));
-            //  expect(queryByText("PG")).toBeFalsy();
+             fireEvent.click(getByAltText("close"));
+             expect(queryByText("PG")).toBeFalsy();
 
 
             expect(container.firstChild).toMatchSnapshot();

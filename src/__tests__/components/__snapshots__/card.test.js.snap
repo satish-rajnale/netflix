@@ -40,57 +40,6 @@ exports[`<Card/> renders the <Card/> on click with data 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="card__Feature-s87lnr-10 dgatLU"
-      src="/images/series/documentaries/tiger-king/large.jpg"
-    >
-      <div
-        class="card__Content-s87lnr-13 kRLAES"
-      >
-        <p
-          class="card__Title-s87lnr-0 card__FeatureTitle-s87lnr-11 gMKuUI ewDSEC"
-        >
-          Tiger King
-        </p>
-        <p
-          class="card__FeatureText-s87lnr-9 clUgkC"
-        >
-          Tiger King description
-        </p>
-        <button
-          class="card__FeatureClose-s87lnr-12 foVqdi"
-        >
-          <img
-            alt="close"
-            src="/images/icons/close.png"
-          />
-        </button>
-        <div
-          class="card__Group-s87lnr-2 iyjHSy"
-        >
-          <div
-            class="card__Maturity-s87lnr-14 kFrKns"
-          >
-            18
-          </div>
-          <p
-            class="card__FeatureText-s87lnr-9 hIJsAk"
-            font-weight="bold"
-          >
-            Documentaries
-          </p>
-        </div>
-        <div
-          class="player__Container-sc-1c49yiu-0"
-        >
-          <button
-            class="player__Button-sc-1c49yiu-4 liGXfw"
-          >
-            Play
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
   <div
     class="card__Container-s87lnr-1 bGhkvJ"
