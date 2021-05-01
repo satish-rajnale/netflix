@@ -38,6 +38,6 @@ Profiles.Name = function ProfilesName({ children, ...restProps }) {
   return <Name {...restProps}>{children}</Name>;
 };
 
-Profiles.Item = function ProfilesItem({ children, ...restProps }) {
-  return <Item {...restProps}>{children}</Item>;
-};
+// Profiles.Item = function ProfilesItem({ children, ...restProps }) {
+//   return <Item {...restProps}>{children}</Item>;
+// };
