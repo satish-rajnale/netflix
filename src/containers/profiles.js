@@ -2,6 +2,7 @@ import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { Profiles } from "../components";
+import React from 'react'
 
 export function SelectProfileContainer({ user, setProfile }) {
   return (
@@ -13,7 +14,7 @@ export function SelectProfileContainer({ user, setProfile }) {
       </Header>
 
       <Profiles>
-        <Profiles.Title>Who's Watching?</Profiles.Title>
+        <Profiles.Title>{user.displayName}</Profiles.Title>
         <Profiles.List>
           <Profiles.User
             onClick={() =>

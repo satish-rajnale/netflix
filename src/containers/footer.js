@@ -1,4 +1,5 @@
 import { Footer } from "../components";
+import React from 'react'
 
 export function FooterContainer() {
   return (

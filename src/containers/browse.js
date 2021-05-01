@@ -6,6 +6,7 @@ import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { FooterContainer } from "./footer";
 import Fuse from "fuse.js";
+import React from 'react'
 
 export function BrowseContainer({ slides }) {
   const { firebase } = useContext(FirebaseContext);
@@ -92,11 +93,7 @@ export function BrowseContainer({ slides }) {
 
         <Header.Feature>
           <Header.Text>
-            Forever alone in a crowd, failed comedian Arthur Fleck seeks
-            connection as he walks the streets of Gotham City. Arthur wears two
-            masks -- the one he paints for his day job as a clown, and the guise
-            he projects in a futile attempt to feel like he's part of the world
-            around him.
+          The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.
           </Header.Text>
           <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>

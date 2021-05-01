@@ -12,7 +12,7 @@ export const Background = styled.div`
     ),
     url(${({ src }) => src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"}) top left / cover no-repeat;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     ${({ dontShowOnSmallViewPort }) =>
       dontShowOnSmallViewPort && `background: none;`}
   }
@@ -137,9 +137,11 @@ export const Dropdown = styled.div`
   position: absolute;
   background-color: black;
   padding: 10px;
-  width: 100px;
-  top: 32px;
-  right: 10px;
+  width: 150px;
+  font-size:20px;
+  border-radius:8px;
+  top: 10px;
+  right: 25px;
 
   ${Group}:last-of-type ${Link} {
     cursor: pointer;
@@ -166,7 +168,7 @@ export const Dropdown = styled.div`
   }
 
   p {
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -177,6 +179,9 @@ export const Profile = styled.div`
   align-items: center;
   margin-left: 20px;
   position: relative;
+  :hover{
+    border: 1px solid white;
+  }
 
   button {
     cursor: pointer;
@@ -186,6 +191,7 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: column;
   }
+  
 `;
 
 export const Feature = styled(Container)`

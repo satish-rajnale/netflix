@@ -4,6 +4,8 @@ import { HeaderContainer } from "../containers/header";
 import { JumbotronContainer } from "../containers/jumbotron";
 import { OptForm } from "../components";
 import { Feature } from "../components";
+import React from 'react'
+
 export default function Home() {
   return (
     <>
