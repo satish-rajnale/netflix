@@ -42,3 +42,21 @@ exports[`<Form/> renders <Form/> with data 1`] = `
   </p>
 </div>
 `;
+
+exports[`<Form/> renders <Form/>with error 1`] = `
+<div
+  class="form__Container-sc-7952rh-0 dEJqzD"
+>
+  <div
+    class="form__Error-sc-7952rh-1 jQGvWO"
+  >
+    This email address is alredy registered.
+  </div>
+  <button
+    class="form__Submit-sc-7952rh-8 cqACVf"
+    type="submit"
+  >
+    Sign up
+  </button>
+</div>
+`;

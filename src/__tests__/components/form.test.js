@@ -48,5 +48,21 @@ describe("<Form/>", () => {
 
         expect(container.firstChild).toMatchSnapshot();
 
-    })
+    });
+
+
+
+    it("renders <Form/>with error", () => {
+            const {container, getByText, queryByText} =render(
+                <Form>
+                    <Form.Error>This email address is alredy registered.</Form.Error>
+                    <Form.Submit type="submit">Sign up</Form.Submit>
+                </Form>
+            );
+            expect(getByText("This email address is alredy registered.")).toBeTruthy();
+            expect(queryByText("Sign up").disabled).toBeFalsy();
+
+      
+            expect(container.firstChild).toMatchSnapshot();
+        })
 })
