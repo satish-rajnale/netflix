@@ -3,7 +3,7 @@
 
 In this project I have used styled-components, react, react-router-dom, firebase, fuse.js, normalize.css to create a responsive netflix webapp.  
 
-<img src="https://github.com/satish-rajnale/netflix/blob/master/public/netflix.gif" width="1000px" height="500px" />
+<img src="https://github.com/satish-rajnale/netflix/blob/master/netflix.gif" width="1000px" height="500px" />
 
 ### Sign In page:
 ![signin](https://user-images.githubusercontent.com/76589507/113990097-c0004600-986e-11eb-984f-5033247d8a42.PNG)
