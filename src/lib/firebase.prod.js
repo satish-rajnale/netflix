@@ -1,18 +1,37 @@
-import Firebase from "firebase";
-import "firebase/firestore";
-import "firebase/auth";
-// import { seedDatabase} from '../seed'
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { seedDatabase } from '../seed'
 
 const config = {
-  apiKey: "AIzaSyAPr1GtQujkoOLkZYmZ4KsIpvz4oGo1-P8",
-  authDomain: "netflix-81b01.firebaseapp.com",
-  projectId: "netflix-81b01",
-  storageBucket: "netflix-81b01.appspot.com",
-  messagingSenderId: "161239634460",
-  appId: "1:161239634460:web:609289931e75cae28e05d9",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
-const firebase = Firebase.initializeApp(config);
+// Validate that all required environment variables are present
+const requiredEnvVars = [
+  'REACT_APP_FIREBASE_API_KEY',
+  'REACT_APP_FIREBASE_AUTH_DOMAIN',
+  'REACT_APP_FIREBASE_PROJECT_ID',
+  'REACT_APP_FIREBASE_STORAGE_BUCKET',
+  'REACT_APP_FIREBASE_MESSAGING_SENDER_ID',
+  'REACT_APP_FIREBASE_APP_ID'
+];
 
-// seedDatabase(firebase);
-export { firebase };
+const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
+if (missingVars.length > 0) {
+  throw new Error(`Missing required environment variables: ${missingVars.join(', ')}`);
+}
+
+const firebase = initializeApp(config);
+const db = getFirestore(firebase);
+const auth = getAuth(firebase);
+
+// Seed the database with initial data (async)
+seedDatabase(db).catch(console.error);
+
+export { firebase, db, auth };

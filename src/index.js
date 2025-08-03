@@ -1,20 +1,22 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { GlobalStyles } from "./global-styles";
 import "normalize.css";
 import App from "./App";
 import { HashRouter } from "react-router-dom";
 import { firebase } from "./lib/firebase.prod";
-import { FirebaseContext } from "./context/firebase";
+import { FirebaseProvider } from "./context/firebase";
 
-render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
     <HashRouter>
-      <FirebaseContext.Provider value={{ firebase }}>
+      <FirebaseProvider firebase={firebase}>
         <GlobalStyles />
         <App />
-      </FirebaseContext.Provider>
+      </FirebaseProvider>
     </HashRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

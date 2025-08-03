@@ -6,10 +6,11 @@ import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { FooterContainer } from "./footer";
 import Fuse from "fuse.js";
+import { signOut } from "firebase/auth";
 import React from 'react'
 
 export function BrowseContainer({ slides }) {
-  const { firebase } = useContext(FirebaseContext);
+  const { auth } = useContext(FirebaseContext);
   const [user, setUser] = useState([]);
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
@@ -25,12 +26,12 @@ export function BrowseContainer({ slides }) {
 
   useEffect(() => {
     setSlideRows(slides[category]);
-    if (firebase.auth().currentUser) {
-      setUser(firebase.auth().currentUser);
+    if (auth.currentUser) {
+      setUser(auth.currentUser);
     } else {
       setUser([]);
     }
-  }, [slides, category, firebase]);
+  }, [slides, category, auth]);
 
   useEffect(() => {
     const fuse = new Fuse(slideRows, {
@@ -46,7 +47,7 @@ export function BrowseContainer({ slides }) {
   }, [searchTerm]);
 
   function signmeOut() {
-    firebase.auth().signOut();
+    signOut(auth);
   }
 
   return profile.displayName ? (

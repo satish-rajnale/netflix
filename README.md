@@ -5,6 +5,61 @@ In this project I have used styled-components, react, react-router-dom, firebase
 
 <img src="https://github.com/satish-rajnale/netflix/blob/master/netflix.gif" width="1000px" height="500px" />
 
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 21 or higher
+- npm or yarn
+- Firebase project
+
+### Environment Setup
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd netflix
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Fill in your Firebase configuration values
+
+```bash
+cp .env.example .env
+```
+
+4. Update the `.env` file with your Firebase configuration:
+```env
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
+
+5. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
+
+### Firebase Setup
+
+1. Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Authentication with Email/Password provider
+3. Create a Firestore database
+4. Get your Firebase configuration from Project Settings > General > Your apps
+5. Add the configuration values to your `.env` file
+
 ### Sign In page:
 ![signin](https://user-images.githubusercontent.com/76589507/113990097-c0004600-986e-11eb-984f-5033247d8a42.PNG)
 

@@ -1,47 +1,22 @@
-import { Route, Redirect } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import React from 'react'
 
-export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
-  return (
-    <Route
-      {...rest}
-      render={() => {
-        if (user.user == null) {
-          return children;
-        } else if (user) {
-          return (
-            <Redirect
-              to={{
-                pathname: loggedInPath,
-              }}
-            />
-          );
-        }
-        return null;
-      }}
-    />
-  );
+export function IsUserRedirect({ user, loggedInPath, children }) {
+  if (user.user == null) {
+    return children;
+  } else if (user) {
+    return <Navigate to={loggedInPath} replace />;
+  }
+  return null;
 }
 
-export function ProtectedRoute({ user, children, ...rest }) {
-  return (
-    <Route
-      {...rest}
-      render={({ location }) => {
-        if (user.user == null) {
-          return (
-            <Redirect
-              to={{
-                pathname: "/",
-                state: { from: location },
-              }}
-            />
-          );
-        } else if (user) {
-          return children;
-        }
-        return null;
-      }}
-    />
-  );
+export function ProtectedRoute({ user, children }) {
+  const location = useLocation();
+  
+  if (user.user == null) {
+    return <Navigate to="/" state={{ from: location }} replace />;
+  } else if (user) {
+    return children;
+  }
+  return null;
 }
